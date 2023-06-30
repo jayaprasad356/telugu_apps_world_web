@@ -37,7 +37,7 @@ include "header.php";
             <h1>Panchangam</h1>
             <ol class="breadcrumb">
                 <li>
-                    <a href="home.php"> <i class="fa fa-calender"></i> Panchangam</a>
+                    <a href="home.php"> <i class="fa fa-calendar"></i> Panchangam</a>
                 </li>
             </ol>
         </section>
