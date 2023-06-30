@@ -34,10 +34,10 @@ include "header.php";
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1>Home</h1>
+            <h1></h1>
             <ol class="breadcrumb">
                 <li>
-                    <a href="home.php"> <i class="fa fa-home"></i> Home</a>
+                    <a href="home.php"> <i class="fa fa-home"></i></a>
                 </li>
             </ol>
         </section>
