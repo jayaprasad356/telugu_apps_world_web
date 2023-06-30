@@ -1,6 +1,6 @@
 
 <section class="content-header">
-    <h1>Namakaram /<small><a href="home.php"><i class="fa fa-home"></i> Home</a></small></h1>
+    <h1>Namakaram </h1>
     <ol class="breadcrumb">
         <a class="btn btn-block btn-default" href="add-namakaram.php"><i class="fa fa-plus-square"></i> Add Namakaram</a>
     </ol>

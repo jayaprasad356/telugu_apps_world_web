@@ -107,7 +107,7 @@ $fn = new custom_functions;
     <div class="wrapper">
         <header class="main-header">
             <!-- Logo -->
-            <a href="home.php" class="logo">
+            <a href="panchangam.php" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini">
                 </span>
@@ -159,17 +159,17 @@ $fn = new custom_functions;
             <!-- sidebar: style can be found in sidebar.less -->
             <section class="sidebar">
             <ul class="sidebar-menu">
-                <!--<li class="treeview">
-                    <a href="home.php">
-                        <i class="fa fa-home" class="active"></i> <span>Home</span>
-                    </a>
-                </li>-->
                 <li class="treeview">
+                    <a href="panchangam.php">
+                        <i class="fa fa-calendar" class="active"></i> <span>Panchangam</span>
+                    </a>
+                </li>
+               <!-- <li class="treeview">
                     <a href="panchangam.php">
                         <i class="fa fa-calendar" class="active"></i>
                         <span>Panchangam</span>
                     </a>
-                </li>
+                </li>-->
                 <!--<li class="treeview">
                     <a href="bulk-panchangam-upload.php">
                         <i class="fa fa-calendar"></i>

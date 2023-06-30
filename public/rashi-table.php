@@ -1,6 +1,6 @@
 
 <section class="content-header">
-    <h1>Rashi /<small><a href="home.php"><i class="fa fa-home"></i> Home</a></small></h1>
+    <h1>Rashi</h1>
     <ol class="breadcrumb">
         <a class="btn btn-block btn-default" href="add-rashi.php"><i class="fa fa-plus-square"></i> Add Rashi</a>
     </ol>

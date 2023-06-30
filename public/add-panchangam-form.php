@@ -88,9 +88,9 @@ if (isset($_POST['btnAdd'])) {
     <h1>Add Panchangam <small><a href='panchangam.php'> <i class='fa fa-angle-double-left'></i>&nbsp;&nbsp;&nbsp;Back to Panchangam</a></small></h1>
 
     <?php echo isset($error['add_panchangam']) ? $error['add_panchangam'] : ''; ?>
-    <ol class="breadcrumb">
+    <!--<ol class="breadcrumb">
         <li><a href="home.php"><i class="fa fa-home"></i> Home</a></li>
-    </ol>
+    </ol>-->
     <hr />
 </section>
 <section class="content">
