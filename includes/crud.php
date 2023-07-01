@@ -1,7 +1,7 @@
 <?php
 
 
-define('DOMAIN_URL', 'https://telugupanchangam.vibametelugucalendar.online/'); /* chnage to your domain here - don't forget to add forward slash at the end of the URL like this "/" */
+define('DOMAIN_URL', 'https://appsworld.vibametelugucalendar.online/'); /* chnage to your domain here - don't forget to add forward slash at the end of the URL like this "/" */
 define('ALLOW_MODIFICATION', 1);
 define('JWT_SECRET_KEY', '12345678'); /* chnage to your secret key here set it to anything you like*/
 
@@ -20,11 +20,19 @@ class Database
    //  private $db_name = "telugu_calendar";    // Change as required
 
 
+    //DEMO
+    // private $db_host = "localhost";  // Change as required
+    // private $db_user = "u743445510_apps_world";  // Change as required
+    // private $db_pass = "Apps_world@0111";  // Change as required
+    // private $db_name = "u743445510_apps_world";    // Change as required
+
     //LIVE
     private $db_host = "localhost";  // Change as required
-    private $db_user = "u743445510_apps_world";  // Change as required
-    private $db_pass = "Apps_world@0111";  // Change as required
-    private $db_name = "u743445510_apps_world";    // Change as required
+    private $db_user = "u762811021_appsworld";  // Change as required
+    private $db_pass = "Aworld@0111";  // Change as required
+    private $db_name = "u762811021_appsworld";    // Change as required
+
+
     /*
      * Extra variables that are required by other function such as boolean con variable
      */
