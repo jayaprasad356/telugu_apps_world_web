@@ -12,6 +12,19 @@ include_once('../includes/functions.php');
 $function = new functions;
 
 
+//panchangam tab variant
+if (isset($_POST['delete_variant'])) {
+    $panchangam_id = $db->escapeString(($_POST['id']));
+    $sql = "DELETE FROM panchangam_variant WHERE id = $panchangam_id";
+    $db->sql($sql);
+    $result = $db->getResult();
+    if ($result) {
+        echo 1;
+    } else {
+        echo 0;
+    }
+}
+
 if (isset($_POST['week'])) {
     $year = $db->escapeString(($_POST['year']));
     $month = $db->escapeString(($_POST['month']));
