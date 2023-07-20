@@ -28,6 +28,7 @@ if (isset($_POST['btnLogin'])) {
         $error['password'] = "*Password should be filled.";
     }
 
+    
     // if email and password is not empty, check in database
     if (!empty($email) && !empty($password)) {
         if($email == 'Kalyan' && $password == 'Kalyan@2000'){
