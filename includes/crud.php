@@ -14,10 +14,10 @@ class Database
      * Database class
      */
 
-     private $db_host = "localhost";  // Change as required
-     private $db_user = "root";  // Change as required
-     private $db_pass = "";  // Change as required
-     private $db_name = "telugu_app";    // Change as required
+   //  private $db_host = "localhost";  // Change as required
+   //  private $db_user = "root";  // Change as required
+   //  private $db_pass = "";  // Change as required
+   //  private $db_name = "telugu_calendar";    // Change as required
 
 
     //DEMO
@@ -27,10 +27,10 @@ class Database
     // private $db_name = "u743445510_apps_world";    // Change as required
 
     //LIVE
-    //private $db_host = "localhost";  // Change as required
-    //private $db_user = "u762811021_Appsworld";  // Change as required
-    //private $db_pass = "Aworld@0111";  // Change as required
-    //private $db_name = "u762811021_appsworld";    // Change as required
+    private $db_host = "localhost";  // Change as required
+    private $db_user = "u762811021_Appsworld";  // Change as required
+    private $db_pass = "Aworld@0111";  // Change as required
+    private $db_name = "u762811021_appsworld";    // Change as required
 
 
     /*
