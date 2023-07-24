@@ -34,15 +34,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // If the FCM ID does not exist, insert it
         $sql = "INSERT INTO `device_token` (fcm_id) VALUES ('$fcm_id')";
         $db->sql($sql);
-        
         $response['success'] = true;
         $response['message'] = "Device token added Successfully";
-        $response['data'] = array('fcm_id' => $fcm_id);
     }
-    echo json_encode($response, JSON_UNESCAPED_SLASHES);
+    print_r(json_encode($response));
 } else {
     $response['success'] = false;
     $response['message'] = "Invalid request method";
-    echo json_encode($response, JSON_UNESCAPED_SLASHES);
+    print_r(json_encode($response));
 }
 ?>
