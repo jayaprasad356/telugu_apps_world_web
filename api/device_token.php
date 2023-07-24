@@ -22,6 +22,7 @@ if($num>=1){
         $temp = array();
         foreach ($res as $row) {
             $id = $row['id'];
+            $temp['id'] = $row['id'];
             $temp['fcm_id'] = $row['fcm_id'];
             $rows[] = $temp;
         }
