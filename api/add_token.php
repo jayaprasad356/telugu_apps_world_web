@@ -22,11 +22,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $fcm_id = $db->escapeString($_POST['fcm_id']);
 
-    $sql = "INSERT INTO `device_token` (fcm_id) VALUES ('$fcm_id')";
-    $db->sql($sql);
+    $check_sql = "SELECT * FROM `device_token` WHERE fcm_id = '$fcm_id'";
+    $db->sql($check_sql);
+    $res = $db->getResult();
 
-    $response['success'] = true;
-    $response['message'] = "Device token added Successfully";
+    if ($db->numRows($res) > 0) {
+        // If the FCM ID already exists
+        $response['success'] = false;
+        $response['message'] = "FCM ID already exists";
+    } else {
+        // If the FCM ID does not exist, insert it
+        $sql = "INSERT INTO `device_token` (fcm_id) VALUES ('$fcm_id')";
+        $db->sql($sql);
+        
+        $response['success'] = true;
+        $response['message'] = "Device token added Successfully";
+        $response['data'] = array('fcm_id' => $fcm_id, 'inserted_at' => date('Y-m-d H:i:s'));
+    }
     print_r(json_encode($response));
 } else {
     $response['success'] = false;
