@@ -37,12 +37,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         $response['success'] = true;
         $response['message'] = "Device token added Successfully";
-        $response['data'] = array('fcm_id' => $fcm_id, 'inserted_at' => date('Y-m-d H:i:s'));
+        $response['data'] = array('fcm_id' => $fcm_id);
     }
-    print_r(json_encode($response));
+    echo json_encode($response, JSON_UNESCAPED_SLASHES);
 } else {
     $response['success'] = false;
     $response['message'] = "Invalid request method";
-    print_r(json_encode($response));
+    echo json_encode($response, JSON_UNESCAPED_SLASHES);
 }
 ?>
