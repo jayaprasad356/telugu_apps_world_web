@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $rows[] = array('id' => $id, 'fcm_id' => $fcm_id);
             }
             $response['success'] = true;
-            $response['message'] = "Device token added and listed Successfully";
+            $response['message'] = "Device token added Successfully";
             $response['data'] = $rows;
             print_r(json_encode($response));
         } else {
