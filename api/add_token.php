@@ -30,14 +30,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // If the FCM ID already exists
         $response['success'] = false;
         $response['message'] = "FCM ID already exists";
+        print_r(json_encode($response));
     } else {
         // If the FCM ID does not exist, insert it
         $sql = "INSERT INTO `device_token` (fcm_id) VALUES ('$fcm_id')";
         $db->sql($sql);
-        $response['success'] = true;
-        $response['message'] = "Device token added Successfully";
+        
+        // Get the inserted data from the database
+        $get_sql = "SELECT * FROM `device_token` WHERE fcm_id = '$fcm_id'";
+        $db->sql($get_sql);
+        $res = $db->getResult();
+        $num = $db->numRows($res);
+        
+        if ($num >= 1) {
+            $rows = array();
+            foreach ($res as $row) {
+                $id = $row['id'];
+                $rows[] = array('id' => $id, 'fcm_id' => $fcm_id);
+            }
+            $response['success'] = true;
+            $response['message'] = "Device token added and listed Successfully";
+            $response['data'] = $rows;
+            print_r(json_encode($response));
+        } else {
+            $response['success'] = false;
+            $response['message'] = "Data Not Found";
+            print_r(json_encode($response));
+        }
     }
-    print_r(json_encode($response));
 } else {
     $response['success'] = false;
     $response['message'] = "Invalid request method";
