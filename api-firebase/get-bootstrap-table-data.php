@@ -222,7 +222,7 @@ if (isset($_GET['table']) && $_GET['table'] == 'muhurtham') {
     foreach ($res as $row) {
         $operate = '<a href="edit-muhurtham.php?id=' . $row['id'] . '" class="label label-primary" title="Edit">Edit</a>';
         $operate .= ' <a class="text text-danger" href="delete-muhurtham.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i>Delete</a>';
-        $tempRow['id'] =  $row_number++;
+        $tempRow['id'] = $row['id'];
         $tempRow['muhurtham'] = $row['muhurtham'];
         $tempRow['operate'] = $operate;
         $rows[] = $tempRow;
@@ -282,7 +282,7 @@ if (isset($_GET['table']) && $_GET['table'] == 'muhurtham_tab') {
     foreach ($res as $row) {
         $operate = '<a href="edit-muhurtham-tab.php?id=' . $row['id'] . '" class="label label-primary" title="Edit">Edit</a>';
         $operate .= ' <a class="text text-danger" href="delete-muhurtham-tab.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i>Delete</a>';
-        $tempRow['id'] =  $row_number++;
+        $tempRow['id'] = $row['id'];
         $tempRow['muhurtham'] = $row['muhurtham'];
         $tempRow['title'] = $row['title'];
         $tempRow['description'] = $row['description'];
@@ -343,7 +343,7 @@ if (isset($_GET['table']) && $_GET['table'] == 'rashi') {
     foreach ($res as $row) {
         $operate = '<a href="edit-rashi.php?id=' . $row['id'] . '" class="label label-primary" title="Edit">Edit</a>';
         $operate .= ' <a class="text text-danger" href="delete-rashi.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i>Delete</a>';
-        $tempRow['id'] =  $row_number++;
+        $tempRow['id'] = $row['id'];
         $tempRow['rashi'] = $row['rashi'];
         $tempRow['operate'] = $operate;
         $rows[] = $tempRow;
@@ -402,7 +402,7 @@ if (isset($_GET['table']) && $_GET['table'] == 'rashi_tab') {
     foreach ($res as $row) {
         $operate = '<a href="edit-rashi-tab.php?id=' . $row['id'] . '" class="label label-primary" title="Edit">Edit</a>';
         $operate .= ' <a class="text text-danger" href="delete-rashi-tab.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i>Delete</a>';
-        $tempRow['id'] =  $row_number++;
+        $tempRow['id'] = $row['id'];
         $tempRow['rashi'] = $row['rashi'];
         $tempRow['year'] = $row['year'];
         $tempRow['month'] = $row['month'];
@@ -463,7 +463,7 @@ if (isset($_GET['table']) && $_GET['table'] == 'balli_sasthram') {
     foreach ($res as $row) {
         $operate = '<a href="edit-balli_sasthram.php?id=' . $row['id'] . '" class="label label-primary" title="Edit">Edit</a>';
         $operate .= ' <a class="text text-danger" href="delete-balli_sasthram.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i>Delete</a>';
-        $tempRow['id'] = $row_number++;
+        $tempRow['id'] = $row['id'];
         $tempRow['title'] = $row['title'];
         $tempRow['description'] = $row['description'];
         $tempRow['operate'] = $operate;

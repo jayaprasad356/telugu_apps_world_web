@@ -21,7 +21,7 @@
                         }'>
                             <thead>
                                 <tr>
-                                     <th  data-field="id">S.No</th>
+                                <th  data-field="id" data-sortable="true">ID</th>
                                     <th data-field="rashi" data-sortable="true">Rashi</th>
                                     <th data-field="year" data-sortable="true">Year</th>
                                     <th data-field="month" data-sortable="true">Month</th>
