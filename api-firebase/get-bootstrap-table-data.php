@@ -97,7 +97,7 @@ if (isset($_GET['table']) && $_GET['table'] == 'panchangam') {
 
         $operate = ' <a href="edit-panchangam.php?id=' . $row['id'] . '"><i class="fa fa-edit"></i>Edit</a>';
         $operate .= ' <a class="text text-danger" href="delete-panchangam.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i>Delete</a>';
-        $tempRow['id'] = $row_number++;
+        $tempRow['id'] = $row['id'];
         $tempRow['date'] = $row['date'];
         $tempRow['sunrise'] = date('h:i a', strtotime($row['sunrise']));
         $tempRow['sunset'] = date('h:i a', strtotime($row['sunset']));
@@ -164,7 +164,7 @@ if (isset($_GET['table']) && $_GET['table'] == 'festivals') {
         
         $operate = ' <a href="edit-festival.php?id=' . $row['id'] . '"><i class="fa fa-edit"></i>Edit</a>';
         $operate .= ' <a class="text text-danger" href="delete-festival.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i>Delete</a>';
-        $tempRow['id'] =  $row_number++;
+        $tempRow['id'] = $row['id'];
         $tempRow['date'] = $row['date'];
         $tempRow['festival'] = $row['festival'];
         $tempRow['operate'] = $operate;
