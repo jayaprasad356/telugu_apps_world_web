@@ -24,9 +24,9 @@
                                     
                                     <th  data-field="id">S.No</th>
                                     <th data-field="muhurtham" data-sortable="true">Muhurtham</th>
+                                    <th data-field="date" data-sortable="true">Date</th>
                                     <th data-field="title" data-sortable="true">title</th>
                                     <th data-field="description" data-sortable="true">description</th>
-                                    <th data-field="date" data-sortable="true">Date</th>
                                     <th  data-field="operate" data-events="actionEvents">Action</th>
                                 </tr>
                             </thead>
