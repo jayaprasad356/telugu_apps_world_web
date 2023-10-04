@@ -29,7 +29,7 @@ class Database
     //LIVE
     private $db_host = "localhost";  // Change as required
     private $db_user = "u762811021_appsworld";  // Change as required
-    private $db_pass = "Appsworld@123";  // Change as required
+    private $db_pass = "Appsworld@2023";  // Change as required
     private $db_name = "u762811021_appsworld";    // Change as required
 
 
