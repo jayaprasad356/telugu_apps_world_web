@@ -1,6 +1,6 @@
 
 <section class="content-header">
-    <h1>Rashi</h1>
+    <h1>Rashi /<small><a href="home.php"><i class="fa fa-home"></i> Home</a></small></h1>
     <ol class="breadcrumb">
         <a class="btn btn-block btn-default" href="add-rashi.php"><i class="fa fa-plus-square"></i> Add Rashi</a>
     </ol>
@@ -22,7 +22,7 @@
                             <thead>
                                 <tr>
                                     
-                                <th  data-field="id" data-sortable="true">ID</th>
+                                     <th  data-field="id">S.No</th>
                                     <th data-field="rashi" data-sortable="true">Rashi</th>
                                     <th  data-field="operate" data-events="actionEvents">Action</th>
                                 </tr>

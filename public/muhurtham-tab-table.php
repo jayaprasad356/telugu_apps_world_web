@@ -1,6 +1,6 @@
 
 <section class="content-header">
-    <h1>Muhurtham tab </h1>
+    <h1>Muhurtham tab /<small><a href="home.php"><i class="fa fa-home"></i> Home</a></small></h1>
     <ol class="breadcrumb">
         <a class="btn btn-block btn-default" href="add-muhurtham-tab.php"><i class="fa fa-plus-square"></i> Add Muhurtham tab</a>
     </ol>
@@ -24,8 +24,9 @@
                                     
                                     <th  data-field="id">S.No</th>
                                     <th data-field="muhurtham" data-sortable="true">Muhurtham</th>
+                                    <th data-field="year" data-sortable="true">Year</th>
+                                    <th data-field="month" data-sortable="true">Month</th>
                                     <th data-field="title" data-sortable="true">title</th>
-                                    <th data-field="date" data-sortable="true">Date</th>
                                     <th data-field="description" data-sortable="true">description</th>
                                     <th  data-field="operate" data-events="actionEvents">Action</th>
                                 </tr>

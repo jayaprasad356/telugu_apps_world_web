@@ -97,7 +97,7 @@ if (isset($_GET['table']) && $_GET['table'] == 'panchangam') {
 
         $operate = ' <a href="edit-panchangam.php?id=' . $row['id'] . '"><i class="fa fa-edit"></i>Edit</a>';
         $operate .= ' <a class="text text-danger" href="delete-panchangam.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i>Delete</a>';
-        $tempRow['id'] = $row['id'];
+        $tempRow['id'] = $row_number++;
         $tempRow['date'] = $row['date'];
         $tempRow['sunrise'] = date('h:i a', strtotime($row['sunrise']));
         $tempRow['sunset'] = date('h:i a', strtotime($row['sunset']));
@@ -164,7 +164,7 @@ if (isset($_GET['table']) && $_GET['table'] == 'festivals') {
         
         $operate = ' <a href="edit-festival.php?id=' . $row['id'] . '"><i class="fa fa-edit"></i>Edit</a>';
         $operate .= ' <a class="text text-danger" href="delete-festival.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i>Delete</a>';
-        $tempRow['id'] = $row['id'];
+        $tempRow['id'] =  $row_number++;
         $tempRow['date'] = $row['date'];
         $tempRow['festival'] = $row['festival'];
         $tempRow['operate'] = $operate;
@@ -222,7 +222,7 @@ if (isset($_GET['table']) && $_GET['table'] == 'muhurtham') {
     foreach ($res as $row) {
         $operate = '<a href="edit-muhurtham.php?id=' . $row['id'] . '" class="label label-primary" title="Edit">Edit</a>';
         $operate .= ' <a class="text text-danger" href="delete-muhurtham.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i>Delete</a>';
-        $tempRow['id'] = $row['id'];
+        $tempRow['id'] =  $row_number++;
         $tempRow['muhurtham'] = $row['muhurtham'];
         $tempRow['operate'] = $operate;
         $rows[] = $tempRow;
@@ -282,11 +282,12 @@ if (isset($_GET['table']) && $_GET['table'] == 'muhurtham_tab') {
     foreach ($res as $row) {
         $operate = '<a href="edit-muhurtham-tab.php?id=' . $row['id'] . '" class="label label-primary" title="Edit">Edit</a>';
         $operate .= ' <a class="text text-danger" href="delete-muhurtham-tab.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i>Delete</a>';
-        $tempRow['id'] = $row['id'];
+        $tempRow['id'] =  $row_number++;
         $tempRow['muhurtham'] = $row['muhurtham'];
+        $tempRow['year'] = $row['year'];
+        $tempRow['month'] = $row['month'];
         $tempRow['title'] = $row['title'];
         $tempRow['description'] = $row['description'];
-        $tempRow['date'] = $row['date'];
         $tempRow['operate'] = $operate;
         $rows[] = $tempRow;
 
@@ -343,7 +344,7 @@ if (isset($_GET['table']) && $_GET['table'] == 'rashi') {
     foreach ($res as $row) {
         $operate = '<a href="edit-rashi.php?id=' . $row['id'] . '" class="label label-primary" title="Edit">Edit</a>';
         $operate .= ' <a class="text text-danger" href="delete-rashi.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i>Delete</a>';
-        $tempRow['id'] = $row['id'];
+        $tempRow['id'] =  $row_number++;
         $tempRow['rashi'] = $row['rashi'];
         $tempRow['operate'] = $operate;
         $rows[] = $tempRow;
@@ -402,7 +403,7 @@ if (isset($_GET['table']) && $_GET['table'] == 'rashi_tab') {
     foreach ($res as $row) {
         $operate = '<a href="edit-rashi-tab.php?id=' . $row['id'] . '" class="label label-primary" title="Edit">Edit</a>';
         $operate .= ' <a class="text text-danger" href="delete-rashi-tab.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i>Delete</a>';
-        $tempRow['id'] = $row['id'];
+        $tempRow['id'] =  $row_number++;
         $tempRow['rashi'] = $row['rashi'];
         $tempRow['year'] = $row['year'];
         $tempRow['month'] = $row['month'];
@@ -463,7 +464,7 @@ if (isset($_GET['table']) && $_GET['table'] == 'balli_sasthram') {
     foreach ($res as $row) {
         $operate = '<a href="edit-balli_sasthram.php?id=' . $row['id'] . '" class="label label-primary" title="Edit">Edit</a>';
         $operate .= ' <a class="text text-danger" href="delete-balli_sasthram.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i>Delete</a>';
-        $tempRow['id'] = $row['id'];
+        $tempRow['id'] = $row_number++;
         $tempRow['title'] = $row['title'];
         $tempRow['description'] = $row['description'];
         $tempRow['operate'] = $operate;

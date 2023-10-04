@@ -1,6 +1,6 @@
 
 <section class="content-header">
-    <h1>Muhurtham </h1>
+    <h1>Muhurtham /<small><a href="home.php"><i class="fa fa-home"></i> Home</a></small></h1>
     <ol class="breadcrumb">
         <a class="btn btn-block btn-default" href="add-muhurtham.php"><i class="fa fa-plus-square"></i> Add Muhurtham</a>
     </ol>
